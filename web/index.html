@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Test</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="jquery.js"></script>
+	<script src="main.js"></script>
+</head>
+
+<body style="margin: 0 0;">
+	<!--页面-->
+	<div id="fullview">
+		<aside id="leftSide">
+			<!--标题-->
+			<h1 class="xxl">社会关系网络可视化</h1>
+			<div id="dbg"></div>
+			<!--打开文件按钮-->
+			<form class="l" onsubmit="return false;">
+				<label>打开文件</label> <input type="file" id="file"><br />
+				<label>页面搜索</label><input class="l" type="text" oninput="window.find(this.value)">
+			</form>
+			<!--名字列表-->
+			<div id="leftNameList">
+				<ul id="nameList-ul"></ul>
+			</div>
+			<!--个人信息-->
+			<div id="lPersonInfo">
+				<table class="personInfo l">
+					<tr>
+						<td>姓名</td>
+						<td id="lName"></td>
+					</tr>
+					<tr>
+						<td>好友</td>
+						<td>
+							<div id="lFri">
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td>属性</td>
+						<td>
+							<div id="lAttr">
+							</div>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</aside>
+		<canvas id="canvas">
+		</canvas>
+		<aside id="rightSide" >
+			<!--可能认识的朋友列表-->
+			<div>
+				<table class="l" id="friT">
+					<thead><tr><th>可能认识的朋友</th><th>关联度</th></tr></thead>
+					<tbody id="friTb"></tbody>
+				</table>
+			</div>
+			<!--点选的人的信息-->
+			<div id="rPersonInfo">
+				<table class="personInfo l">
+					<tr>
+						<td>姓名</td>
+						<td id="rName"></td>
+					</tr>
+					<tr>
+						<td>好友</td>
+						<td>
+							<div id="rFri">
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td>属性</td>
+						<td>
+							<div id="rAttr">
+							</div>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</aside>
+	</div>
+</body>
+
+</html>

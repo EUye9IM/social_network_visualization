@@ -1,0 +1,16 @@
+{
+  "name": "social_network_visualization",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "publish": "electron-packager . SocialNetworkVisualization --win --out build --arch=x64 --overwrite --ignore=node_modules"
+  },
+  "version": "1.0.0",
+  "author": "",
+  "license": "MIT",
+  "description": "",
+  "dependencies": {
+    "electron": "^13.1.7",
+    "electron-packager": "^15.3.0"
+  }
+}

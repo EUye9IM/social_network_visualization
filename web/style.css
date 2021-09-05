@@ -1,0 +1,108 @@
+#fullview {
+	position:absolute;
+	top: 50%;
+	left: 50%;
+	height: 900px;
+	width: 1600px;
+	background-color:lightgrey;
+	transform: translate(-50%,-50%);
+}
+#leftSide{
+	position:absolute;
+	top: 30px;
+	left: 30px;
+	height: 840px;
+	width: 340px;
+}
+#canvas {
+	position:absolute;
+	top: 27px;
+	left: 397px;
+	height: 840px;
+	width: 800px;
+	background-color: white;
+	border-style: solid;
+	border-width: 3px; 
+	border-color: lightgrey;
+}
+#rightSide{
+	position:absolute;
+	top: 30px;
+	left: 1230px;
+	height: 840px;
+	width: 340px;
+}
+#leftNameList{
+	height: 300px;
+	width: 340px;
+	overflow: auto;
+}
+#lFri,#rFri{
+	height: 170px;
+	overflow: auto;
+}
+#lAttr,#rAttr{
+	height: 140px;
+	overflow: auto;
+}
+#friT{
+	margin-top: 30px;
+	display: block;
+	text-align: center;
+}
+#friTb{
+	display: block;
+	height: 400px;
+	overflow-y:auto;
+}
+#friTb tr{
+	background-color:white;
+}
+#friTb tr:hover{
+	background-color:lightgrey;
+}
+#friT td:first-child,#friT th:first-child{
+	width: 250px;
+}
+#friT td:last-child,#friT th:last-child{
+	width: 90px;
+}
+.xxl{
+	font-size: xx-large;
+}
+.l{
+	font-size: larger;
+}
+.listItem{
+	text-align: center;
+	padding: 5px;
+	background-color:white;
+	border: 1px solid lightgrey;
+}
+.listItem:hover{
+	background-color:lightgrey;
+}
+.rlistItem{
+	text-align: center;
+	padding: 5px;
+	background-color:white;
+	border: 1px solid lightgrey;
+}
+.selected{
+	background-color:lightgrey;
+}
+.personInfo{
+	background-color: white;
+	width: 340px;
+	margin: 30px 0px 0px;
+}
+h1{
+	text-align: center;
+}
+.personInfo td:first-child{
+	text-align: center;
+	width: 50px;
+}
+span{
+	display: inline-block
+}
